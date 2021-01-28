@@ -1,2 +1,0 @@
-#!/bin/bash
-mkdir /tmp/betty; mv /tmp/betty /tmp/holberton
