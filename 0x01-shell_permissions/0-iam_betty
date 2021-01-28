@@ -1,2 +1,2 @@
 #!/bin/bash
-UID betty
+usermod -u betty
