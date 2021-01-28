@@ -1,0 +1,4 @@
+# ignoring all the auto save~ and #modified# files
+*~
+**/\#*
+**/*~
