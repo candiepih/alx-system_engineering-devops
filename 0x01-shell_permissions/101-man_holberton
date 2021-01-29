@@ -2,7 +2,7 @@
 .\" Contact mutheeal.am@gmail.com to correct errors or typos.
 .TH man 2 "10 December 1945" "0.32" "eniac man page"
 .SH NAME
-eniac \- the first electronic general-pupose digital computer. 
+eniac: \- the first electronic general-pupose digital computer. 
 .SH SYNOPSIS
 eniac
 .SH DESCRIPTION
