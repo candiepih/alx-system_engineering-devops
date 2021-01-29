@@ -10,7 +10,7 @@ Eniac was Turing-complete, and able to solve "a large class of numerical problem
 .SH OPTIONS
 eniac does not take any options.
 .SH SEE ALSO
-Eniac could be programmed to perfom complex sequences of operations(2), including loops(2), branches(2), and subroutines(2). 
+ENIAC could be programmed to perform complex sequences of operations(2), including loops(2), branches(2), and subroutines(2). 
 .SH BUGS
 No known bugs.
 .SH AUTHOR
