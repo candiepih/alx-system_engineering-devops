@@ -6,11 +6,11 @@ eniac \- the first electronic general-pupose digital computer.
 .SH SYNOPSIS
 eniac
 .SH DESCRIPTION
-Eniac was Turing-complete, and able to solve "a large class of numerical problems" throught reprogramming.
+Eniac was Turing-complete, and able to solve "a large class of numerical problems" through reprogramming.
 .SH OPTIONS
 eniac does not take any options.
 .SH SEE ALSO
-Eniac could be programmed to perfon complex sequences of operations(2), including loops(2), branches(2), and subroutines(2). 
+Eniac could be programmed to perfom complex sequences of operations(2), including loops(2), branches(2), and subroutines(2). 
 .SH BUGS
 No known bugs.
 .SH AUTHOR
