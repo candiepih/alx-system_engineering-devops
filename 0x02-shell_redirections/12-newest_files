@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lrt | cat
+ls -lt | cat
