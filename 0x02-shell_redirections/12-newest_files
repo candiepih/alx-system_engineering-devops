@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | cat
+find /tmp -type f | exex ls -lrt {} \
