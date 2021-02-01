@@ -1,1 +1,1 @@
-# shell redirections
+# Shell, I/O Redirections and filters
