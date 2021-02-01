@@ -1,2 +1,2 @@
 #!/bin/bash
-find /tmp -type f | exex ls -lrt {} \
+find /tmp -type f | exex ls -lt {} \
