@@ -1,2 +1,2 @@
 #!/bin/bash
-local betty='Holberton'
+local BETTY='Holberton'
