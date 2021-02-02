@@ -1,0 +1,5 @@
+#!/bin/bash
+WATER="ewwatratewa"
+STIR="ti.itirtrtr"
+
+echo ${behlnort#"${water#$WATER}${stir#$STIR}"}
