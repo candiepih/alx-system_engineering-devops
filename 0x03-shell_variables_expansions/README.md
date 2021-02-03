@@ -14,6 +14,6 @@
 12. Combination - script that prints all possible combinations of two letters, except oo.
 13. Floats - script that prints a number with two decimal places.
 14. Decimal to Hexadecimal - script that converts a number from base 10 to base 16.
-15. Everyone is a proponent of strong encryption - script that encodes and decodes text using the rot13 encryption. Assume ASCII.
-16. The eggs of the brood need to be an odd number - script that prints every other line from the input, starting with the first line.
-17. I'm an instant star. Just add water and stir - shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result
+100. Everyone is a proponent of strong encryption - script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+101. The eggs of the brood need to be an odd number - script that prints every other line from the input, starting with the first line.
+102. I'm an instant star. Just add water and stir - shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result
