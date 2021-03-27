@@ -1,4 +1,4 @@
-# shell variables and expansions
+# Shell variables and expansions
 This topic was aimed at understanding the following:-
 
 ### General
