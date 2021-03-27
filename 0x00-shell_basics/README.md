@@ -54,6 +54,7 @@ Topic aim was to understand several concepts on shell basics, such as:-
 ### LTS
 * What does LTS mean?
 
+At the end of the topic the following task files were used to help grasp the concepts.
 
 ## 0-current_working_directory
 script that prints the absolute path name of the current working directory
