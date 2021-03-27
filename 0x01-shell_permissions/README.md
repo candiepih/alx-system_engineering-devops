@@ -1,4 +1,4 @@
-# shell permissions 
+# Shell permissions 
 This topics aim was to understand:-
 * What the commands chmod, sudo, su, chown, chgrp do
 * Linux file permissions
