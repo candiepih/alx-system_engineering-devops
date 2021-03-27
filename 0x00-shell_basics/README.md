@@ -1,4 +1,4 @@
-# learning about shell basics
+# Learning about shell basics
 Topic aim was to understand several concepts on shell basics, such as:-
 ### General
 * What does RTFM mean?
