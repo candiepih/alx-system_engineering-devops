@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# script that displays and sleeps 2 betwen each iteration and captures
+# sigterm signal
+
+trap 'echo "I am invincible!!!"' SIGTERM
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
