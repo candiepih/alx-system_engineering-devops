@@ -31,7 +31,7 @@ Puppet manifest file that kills a process named `killmenow` with following requi
 
 example of starting a process
 
-```.sh
+```
 
 root@d391259bf577:/# cat killmenow
 #!/bin/bash
