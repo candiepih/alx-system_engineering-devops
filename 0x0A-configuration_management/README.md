@@ -46,7 +46,7 @@ root@d391259bf577:/# ./killmenow
 
 Terminal #1: executing [2-execute_a_command.pp](./2-execute_a_command.pp) manifest file
 
-```
+```sh
 root@d391259bf577:/# puppet apply 2-execute_a_command.pp
 
 Notice: Compiled catalog for d391259bf577.hsd1.ca.comcast.net in environment production in 0.01 seconds
@@ -57,7 +57,7 @@ Notice: Finished catalog run in 0.10 seconds
 
 Terminal #0: check for process termination
 
-```
+```.sh
 root@d391259bf577:/# ./killmenow
 Terminated
 root@d391259bf577:/#
