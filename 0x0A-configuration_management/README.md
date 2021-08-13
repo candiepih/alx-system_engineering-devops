@@ -6,7 +6,7 @@ Below task files were used to test understanding on various concepts:-
 
 [0-create_a_file.pp](./0-create_a_file.pp)
 
-Creates a file in `/tmp` using puppet with following requirements.
+Puppet manifest file that creates a file in `/tmp` using puppet with following requirements.
 
 * File path is `/tmp/holberton`
 * File permission is `0744`
@@ -14,3 +14,32 @@ Creates a file in `/tmp` using puppet with following requirements.
 * File group is `www-data`
 * File contains `I love Puppet`
 
+
+[1-install_a_package.pp](./1-install_a_package.pp)
+
+Puppet manifest file that installs `puppet-lint` with following requirements.
+
+* Install `puppet-lint`
+* Version `2.1.1`
+
+[2-execute_a_command.pp](./2-execute_a_command.pp)
+
+Puppet manifest file that kills a process named `killmenow` with following requirements.
+
+* Must use the `exec` Puppet resource
+* Must use `pkill`
+
+example of starting a process
+
+```.sh
+
+root@d391259bf577:/# cat killmenow
+#!/bin/bash
+while [[ true ]]
+do
+    sleep 2
+done
+
+root@d391259bf577:/# ./killmenow
+
+```
