@@ -28,3 +28,12 @@ Requirements:-
 [2-ssh_config](./2-ssh_config)
 
 SSH configuraton to my ubuntu Vagrant machine file to suit our need to connect to a server without typing a password
+
+[100-puppet_ssh_config.pp](./100-puppet_ssh_config.pp)
+
+Puppet manifest file that make changes to `/etc/ssh/sshd_config` configuration file
+
+Requrements:
+* Configuration must be configured to use the private key `~/.ssh/holberton`
+* Configuration must be configured to refuse to authenticate using a password
+
