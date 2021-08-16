@@ -23,4 +23,13 @@ Requirements
 This is how it works:-
 
 1. When trying to `curl 0:8080` for the first time an error like `curl: (7) Failed to connect to 0 port 8080: Connection refused` appears which is probably apache isn't running or port 8080 isn't available. In my case apache wasn't started so i restarted it with command `sudo service apache2 restart`.
-2. 
+2. Now if you try again to `curl 0:8080` you might get the same error, but this time probably the port 8080 to listen to is unavailable. This is configured by adding a `Listen 8080` to /etc/apache2/ports.conf apache ports config file. Changing the file means also adding other change to virtualhost file. By editing Virtualhost to have `*:8080`.
+3. After success trying again to `curl 0:8080` gives the following output:-
+
+```.sh
+
+vagrant@vagrant:~$ curl 0:8080
+Hello Holberton
+vagrant@vagrant:~$
+
+```
