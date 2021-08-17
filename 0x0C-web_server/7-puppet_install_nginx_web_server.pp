@@ -7,7 +7,7 @@ package {'nginx':
 }
 
 file {'/var/www/html/index.html':
-  ensure  => present
+  ensure  => present,
   content => 'Holberton School',
 }
 
@@ -18,13 +18,13 @@ file_line {'server_name _;':
 }
 
 file {'/var/www/html/404.html':
-  ensure  => present
+  ensure  => present,
   content => "Ceci n'est pas une page",
 }
 
-file_line {'server_name _;':
+file_line {'server_name _; ':
   path  => '/etc/nginx/sites-enabled/default',
-  line  => "\n\t error_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}",
+  line  => "\n\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}",
   after => 'server_name _;'
 }
 
