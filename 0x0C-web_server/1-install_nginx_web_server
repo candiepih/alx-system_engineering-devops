@@ -2,8 +2,18 @@
 # installs and configures nginx web server to listen to port 80 and
 # serves a page with content `Holberton School` when / is querried
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install nginx
-echo "Holberton School" | sudo tee /var/www/html/index.html
+apt-get -y install nginx
+mkdir -p /data/www
+echo "Holberton School for the win!" > index.html
+cp index.html /data/www/
+cat > default <<EOF
+    server {
+        listen 80 default_server;
+        root /data/www;
+        location / {
+            index index.html index.html;
+        }
+    }
+EOF
+cp default /etc/nginx/sites-available/default
 sudo service nginx restart
