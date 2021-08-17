@@ -5,11 +5,11 @@
 apt-get -y install nginx
 mkdir -p /data/www
 echo "Holberton School for the win!" > index.html
-cp index.html /data/www/
+cp index.html /data/www/html
 cat > default <<EOF
     server {
         listen 80 default_server;
-        root /data/www;
+        root /data/www/html;
         location / {
             index index.html index.html;
         }
