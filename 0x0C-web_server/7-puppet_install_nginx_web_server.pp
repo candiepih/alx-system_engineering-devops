@@ -16,7 +16,7 @@ file {'/var/www/html/index.html':
 }
 
 file_line {'server_name _;':
-  path  => '/etc/nginx/sites-available/default',
+  path  => '/etc/nginx/sites-enabled/default',
   line  => "\n\tlocation /redirect_me {\n\t\trewrite ^/redirect_me(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n\t}",
   after => 'server_name _;'
 }
