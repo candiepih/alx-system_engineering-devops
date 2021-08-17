@@ -2,8 +2,10 @@
 # installs and configures nginx web server to listen to port 80 and
 # serves a page with content `Holberton School` when / is querried
 
+apt-get -y update
+apt-get -y upgrade
 apt-get -y install nginx
-mkdir -p /data/www
+mkdir -p /data/www/html
 echo "Holberton School for the win!" > index.html
 cp index.html /data/www/html
 cat > default <<EOF
