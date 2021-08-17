@@ -5,4 +5,4 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 apt-get -y install nginx
 echo "Holberton School" > /var/www/html/index.html
-sudo /etc/init.d/nginx start
+sudo service nginx start
