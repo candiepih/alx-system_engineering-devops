@@ -2,6 +2,10 @@
 # with permanent redirect for /redirect_me and handle
 # custom error 404 page
 
+exec {'apt-get-update':
+  command => '/usr/bin/apt-get update'
+}
+
 package {'nginx':
   ensure => installed,
 }
