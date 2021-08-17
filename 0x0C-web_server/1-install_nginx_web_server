@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # installs and configures nginx web server
 
+sudo apt-get -y update
+sudo apt-get -y upgrade
 apt-get -y install nginx
-echo "Holberton School" | sudo tee /var/www/html/index.html
+echo "Holberton School" > /var/www/html/index.html
 sudo /etc/init.d/nginx start
