@@ -2,9 +2,9 @@
 # shellcheck disable=SC2154
 # Configures Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
 
-apt-get -y update
-apt-get -y upgrade
-apt-get -y install nginx
-sed -i "11i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo sed -i "11i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
 sudo service nginx start
