@@ -9,7 +9,8 @@ apt-get -y install nginx
 
 new_location='\n\tlocation /redirect_me {\n\t\trewrite ^/redirect_me(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n\t}'
 error_line='\n\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}'
-header_line="\\n\tadd_header X-Served-By $hostname;"
+header_line="\\n\tadd_header X-Served-By $HOSTNAME;"
+
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
