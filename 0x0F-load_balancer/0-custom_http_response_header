@@ -15,6 +15,6 @@ echo "Holberton School" | sudo tee /var/www/html/index.html
 
 sed -i "/server_name _;/ a \ $new_location" /etc/nginx/sites-available/default
 sed -i "/server_name _;/a \ $error_line" /etc/nginx/sites-enabled/default
-sed -i "/server_name _;/ a \n\tadd_header X-Served-By $hostname;" /etc/nginx/sites-available/default
+sed -i "/server_name _;/ a \n\tadd_header X-Served-By $hostname;" /etc/nginx/sites-enabled/default
 
 sudo /etc/init.d/nginx restart
