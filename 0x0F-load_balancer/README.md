@@ -27,6 +27,7 @@ We mprove our web stack so that there is `redundancy` for our web servers. This 
 The following task files were used for various tasks:-
 
 [0-custom_http_response_header](./0-custom_http_response_header)
+
 Script that configures `web-02` to be identical to `web-01`.
 
 Since we’re placing our web servers behind a load balancer for this project, we want to add a custom Nginx response header. The goal here is to be able to track which web server is answering our HTTP requests, to understand and track the way a load balancer works. More in the coming tasks.
@@ -48,3 +49,10 @@ Requirements:
 * Distribute requests using a roundrobin algorithm
 * Make sure that HAproxy can be managed via an init script
 * Make sure that your servers are configured with the right hostnames: `[STUDENT_ID]-web-01` and `[STUDENT_ID]-web-02`
+
+[2-puppet_custom_http_response_header.pp](./2-puppet_custom_http_response_header.pp)
+
+Just as in [0-custom_http_response_header](./0-custom_http_response_header), we automate the task of creating a custom HTTP header response, but with Puppet.
+
+* The name of the custom HTTP header must be `X-Served-By`
+* The value of the custom HTTP header must be the hostname of the server Nginx is running on
