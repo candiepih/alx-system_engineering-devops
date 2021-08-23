@@ -3,8 +3,8 @@
 # Configures Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
 
 apt-get -y update
-sudo apt-get -y upgrade
+apt-get -y upgrade
 apt-get -y install nginx
-echo "Holberton School" | sudo tee /var/www/html/index.html
 sed -i "11i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
-sudo /etc/init.d/nginx restart
+echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+sudo service nginx start
