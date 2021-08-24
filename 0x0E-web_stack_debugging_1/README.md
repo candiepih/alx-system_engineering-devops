@@ -68,3 +68,5 @@ Commercial support is available at
 root@966c5664b21f:/#
 
 ```
+
+This file ([0-nginx_likes_port_80](./0-nginx_likes_port_80)) was used to automate the whole process
