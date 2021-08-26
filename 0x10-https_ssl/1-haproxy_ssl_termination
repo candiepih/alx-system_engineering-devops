@@ -46,7 +46,7 @@ frontend www-https
         reqadd X-Forwarded-Proto:\ https
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
-        default_backend Web_Servers
+        default_backend www-backend
 
 backend www-backend
         redirect scheme https if !{ ssl_fc }
