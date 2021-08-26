@@ -47,7 +47,6 @@ frontend Local_Server
 backend Web_Servers
         redirect scheme https if !{ ssl_fc }
         balance roundrobin
-        mode http
         server web-01 34.138.28.3:80 check
         server web-02 34.138.208.167:80 check
 
