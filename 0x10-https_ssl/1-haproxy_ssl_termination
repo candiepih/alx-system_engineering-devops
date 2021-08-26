@@ -36,6 +36,11 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
+frontend www-http
+        bind *:80
+        reqadd X-Forwarded-Proto:\ http
+	default_backend www-backend
+
 frontend www-https
         bind *:443 ssl crt /etc/haproxy/certs/toolit.tech.pem
         reqadd X-Forwarded-Proto:\ https
@@ -43,12 +48,7 @@ frontend www-https
         use_backend letsencrypt-backend if letsencrypt-acl
         default_backend Web_Servers
 
-frontend Local_Server
-        bind *:80
-        mode http
-        default_backend Web_Servers
-
-backend Web_Servers
+backend www-backend
         redirect scheme https if !{ ssl_fc }
         balance roundrobin
         server web-01 34.138.28.3:80 check
