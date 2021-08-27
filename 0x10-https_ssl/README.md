@@ -25,6 +25,8 @@ script must accept 2 arguments:
 * type: string
 * what: domain name to audit
 * mandatory: yes
+
+
 `subdomain`:
 * type: string
 * what: specific subdomain to audit
