@@ -31,3 +31,31 @@ script must accept 2 arguments:
 * type: string
 * what: specific subdomain to audit
 * mandatory: no
+
+
+* Output: `The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]`
+* When only the parameter domain is provided, display information for its subdomains `www, lb-01, web-01 and web-02` - in this specific order
+* When passing domain and subdomain parameters, display information for the specified subdomain
+* Ignore `shellcheck` case `SC2086`
+
+[1-haproxy_ssl_termination](./1-haproxy_ssl_termination)
+
+Create a certificate using `certbot` and configure `HAproxy` to accept encrypted traffic for your subdomain `www.`.
+
+Requirements:
+
+* HAproxy must be listening on port TCP 443
+* HAproxy must be accepting SSL traffic
+* HAproxy must serve encrypted traffic that will return the `/` of your web server
+* When querying the root of your domain name, the page returned must contain `Holberton School`
+* Share your HAproxy config as an answer file (`/etc/haproxy/haproxy.cfg`)
+
+This file is HAproxy configuration file
+
+[100-redirect_http_to_https](./100-redirect_http_to_https)
+
+This file is HAproxy configuration file that has Configured HAproxy to automatically redirect HTTP traffic to HTTPS.
+Requirements:
+
+* HAproxy should return a 301
+* HAproxy should redirect HTTP traffic to HTTPS
