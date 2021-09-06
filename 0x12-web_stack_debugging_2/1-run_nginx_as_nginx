@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Fixes this container so that Nginx is running as the nginx user.
+# nginx must be running as nginx user
+# nginx must be listening on all active IPs on port 8080
+# You cannot use apt-get remove
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sed -i 's/\listen 80/\18080/g' /etc/nginx/sites-enabled/default
+sed -i 's/\(listen \(\[::]:\)\?\)80/\18080/g' /etc/nginx/sites-enabled/default
+chmod 0644 /etc/nginx/nginx.conf
+chmod -R nginx:nginx /etc/nginx
+sudo -u nginx service nginx restart
