@@ -13,6 +13,12 @@ The following task files were used to help acomplish various tasks testing the c
 
 [4-mysql_configuration_primary](./4-mysql_configuration_primary)
 
-This is a copy of /etc/mysql/mysql.conf.d/mysqld.cnf configuration file after configuring the MySQL primary hosted on web-01. Setup replication set for MySQL database named `tyrell_corp`
+This is a copy of /etc/mysql/mysql.conf.d/mysqld.cnf configuration file after configuring the MySQL primary hosted on web-01. Setup replication set for MySQL database named `tyrell_corp`.
 
 [4-mysql_configuration_replica](./4-mysql_configuration_replica)
+
+This is a copy of /etc/mysql/mysql.conf.d/mysqld.cnf configuration file after configuring the MySQL replica hosted on web-02. Setup replication set for MySQL database named `tyrell_corp`.
+
+[5-mysql_backup](./5-mysql_backup)
+
+Script that generates a MySQL dump and creates a compressed archive out of it.
