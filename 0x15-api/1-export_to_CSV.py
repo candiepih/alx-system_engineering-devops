@@ -23,7 +23,7 @@ if __name__ == "__main__":
         csv_name = "{}.csv".format(user.get("id"))
         with open(csv_name, mode="w", encoding="utf-8",
                   newline='') as data_file:
-            csv_writer = csv.writer(data_file)
+            csv_writer = csv.writer(data_file, quoting=csv.QUOTE_ALL)
             for todo in user_todos:
                 row = [
                     user.get("id"),
