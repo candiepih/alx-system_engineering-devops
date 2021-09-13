@@ -42,7 +42,7 @@ Requirements:
     * `TOTAL_NUMBER_OF_TASKS`: total number of tasks, which is the sum of completed and non-completed tasks
   * Second and N next lines display the title of completed tasks: `TASK_TITLE` (with 1 tabulation and 1 space before the `TASK_TITLE`)
 
-```.sh
+```
 
 sylvain@ubuntu$ python3 0-gather_data_from_an_API.py 2
 Employee Ervin Howell is done with tasks(8/20):
