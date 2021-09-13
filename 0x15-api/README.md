@@ -44,7 +44,7 @@ Requirements:
 
 ```
 
-sylvain@ubuntu$ python3 0-gather_data_from_an_API.py 2
+usr@ubuntu$ python3 0-gather_data_from_an_API.py 2
 Employee Ervin Howell is done with tasks(8/20):
      distinctio vitae autem nihil ut molestias quo
      voluptas quo tenetur perspiciatis explicabo natus
@@ -54,7 +54,7 @@ Employee Ervin Howell is done with tasks(8/20):
      repellendus veritatis molestias dicta incidunt
      excepturi deleniti adipisci voluptatem et neque optio illum ad
      totam atque quo nesciunt
-sylvain@ubuntu$
+usr@ubuntu$
 
 ```
 
@@ -72,8 +72,8 @@ Sample output:-
 
 ```.sh
 
-sylvain@ubuntu$ python3 1-export_to_CSV.py 2
-sylvain@ubuntu$ cat 2.csv
+usr@ubuntu$ python3 1-export_to_CSV.py 2
+usr@ubuntu$ cat 2.csv
 "2","Antonette","False","suscipit repellat esse quibusdam voluptatem incidunt"
 "2","Antonette","True","distinctio vitae autem nihil ut molestias quo"
 "2","Antonette","False","et itaque necessitatibus maxime molestiae qui quas velit"
@@ -94,6 +94,6 @@ sylvain@ubuntu$ cat 2.csv
 "2","Antonette","False","totam quia non"
 "2","Antonette","False","doloremque quibusdam asperiores libero corrupti illum qui omnis"
 "2","Antonette","True","totam atque quo nesciunt"
-sylvain@ubuntu$
+usr@ubuntu$
 
 ```
