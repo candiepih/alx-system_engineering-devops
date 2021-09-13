@@ -27,7 +27,7 @@ if __name__ == "__main__":
                       len(user_todos)))
 
         for todo in completed_tasks:
-            print("\t{}".format(todo.get("title")))
+            print("\t {}".format(todo.get("title")))
 
     except Exception as e:
         print(e)
