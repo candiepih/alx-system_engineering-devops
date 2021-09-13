@@ -20,7 +20,8 @@ if __name__ == "__main__":
         data = {}
         for user in users:
             user_id = user.get("id")
-            user_todos = list(filter(lambda todo: (todo.get("userId") == user_id),
+            user_todos = list(filter(lambda todo:
+                                     (todo.get("userId") == user_id),
                                      todos))
             tasks = list(map(lambda todo: {
                                  "username": user.get("username"),
