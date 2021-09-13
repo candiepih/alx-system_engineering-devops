@@ -29,7 +29,7 @@ The following task files were used to accomplish understanding the concepts of t
 
 [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py)
 
-Script that, using this [REST API](https://jsonplaceholder.typicode.com/), for a given employee ID, returns information about his/her TODO list progress.
+Script that, uses this [REST API](https://jsonplaceholder.typicode.com/), for a given employee ID, returns information about his/her TODO list progress.
 
 Requirements:
 
@@ -41,3 +41,59 @@ Requirements:
     * `NUMBER_OF_DONE_TASKS`: number of completed tasks
     * `TOTAL_NUMBER_OF_TASKS`: total number of tasks, which is the sum of completed and non-completed tasks
   * Second and N next lines display the title of completed tasks: `TASK_TITLE` (with 1 tabulation and 1 space before the `TASK_TITLE`)
+
+```.sh
+
+sylvain@ubuntu$ python3 0-gather_data_from_an_API.py 2
+Employee Ervin Howell is done with tasks(8/20):
+     distinctio vitae autem nihil ut molestias quo
+     voluptas quo tenetur perspiciatis explicabo natus
+     aliquam aut quasi
+     veritatis pariatur delectus
+     nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis
+     repellendus veritatis molestias dicta incidunt
+     excepturi deleniti adipisci voluptatem et neque optio illum ad
+     totam atque quo nesciunt
+sylvain@ubuntu$
+
+```
+
+[1-export_to_CSV.py](./1-export_to_CSV.py)
+
+Using [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py), extends Python script to export data in the CSV format.
+
+Requirements:
+
+* Records all tasks that are owned by this employee
+* Format must be: `"USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"`
+* File name must be: `USER_ID.csv`
+
+Sample output:-
+
+```.sh
+
+sylvain@ubuntu$ python3 1-export_to_CSV.py 2
+sylvain@ubuntu$ cat 2.csv
+"2","Antonette","False","suscipit repellat esse quibusdam voluptatem incidunt"
+"2","Antonette","True","distinctio vitae autem nihil ut molestias quo"
+"2","Antonette","False","et itaque necessitatibus maxime molestiae qui quas velit"
+"2","Antonette","False","adipisci non ad dicta qui amet quaerat doloribus ea"
+"2","Antonette","True","voluptas quo tenetur perspiciatis explicabo natus"
+"2","Antonette","True","aliquam aut quasi"
+"2","Antonette","True","veritatis pariatur delectus"
+"2","Antonette","False","nesciunt totam sit blanditiis sit"
+"2","Antonette","False","laborum aut in quam"
+"2","Antonette","True","nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis"
+"2","Antonette","False","repudiandae totam in est sint facere fuga"
+"2","Antonette","False","earum doloribus ea doloremque quis"
+"2","Antonette","False","sint sit aut vero"
+"2","Antonette","False","porro aut necessitatibus eaque distinctio"
+"2","Antonette","True","repellendus veritatis molestias dicta incidunt"
+"2","Antonette","True","excepturi deleniti adipisci voluptatem et neque optio illum ad"
+"2","Antonette","False","sunt cum tempora"
+"2","Antonette","False","totam quia non"
+"2","Antonette","False","doloremque quibusdam asperiores libero corrupti illum qui omnis"
+"2","Antonette","True","totam atque quo nesciunt"
+sylvain@ubuntu$
+
+```
