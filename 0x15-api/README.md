@@ -22,3 +22,22 @@ Old-school system administrators usually only know Bash and that is what they us
 One popular way to expose an application and dataset is to use an API. Often, they are the public facing part of websites and micro-services so that allow outsiders to interact with them – access and modify their data. In this project, you will access employee data via an API to organize and export them to different data structures.
 
 This is a perfect example of a task that is not suited for Bash scripting, so let’s build Python scripts.
+
+# Files
+
+The following task files were used to accomplish understanding the concepts of this project.
+
+[0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py)
+
+Script that, using this [REST API](https://jsonplaceholder.typicode.com/), for a given employee ID, returns information about his/her TODO list progress.
+
+Requirements:
+
+* You must use `urllib` or `requests` module
+* The script must accept an integer as a parameter, which is the employee ID
+* The script must display on the standard output the employee TODO list progress in this exact format:
+  * First line: `Employee EMPLOYEE_NAME is done with tasks(NUMBER_OF_DONE_TASKS/TOTAL_NUMBER_OF_TASKS)`:
+    * `EMPLOYEE_NAME`: name of the employee
+    * `NUMBER_OF_DONE_TASKS`: number of completed tasks
+    * `TOTAL_NUMBER_OF_TASKS`: total number of tasks, which is the sum of completed and non-completed tasks
+  * Second and N next lines display the title of completed tasks: `TASK_TITLE` (with 1 tabulation and 1 space before the `TASK_TITLE`)
