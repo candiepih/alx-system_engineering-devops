@@ -8,6 +8,7 @@ Topics aim was to understand the following concepts:-
 * What are the 2 main area of monitoring
 * What are access logs for a web server (such as Nginx)
 * What are error logs for a web server (such as Nginx)
+* Using [Datadog](https://www.datadoghq.com/) for monitoring
 
 ![image](https://user-images.githubusercontent.com/44834632/135334052-17017594-1404-4a9b-be1e-8169f3b51cc8.png)
 
@@ -26,7 +27,7 @@ The following task files were used to test understanding on the concepts.
 
 [2-setup_datadog](./2-setup_datadog)
 
-Using [datadog](https://www.datadoghq.com/) create a dashboard with different metrics displayed in order to get a few different visualizations.
+Using [Datadog](https://www.datadoghq.com/) create a dashboard with different metrics displayed in order to get a few different visualizations.
 
 Requirements:-
 
