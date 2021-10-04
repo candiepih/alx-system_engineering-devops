@@ -4,12 +4,12 @@ Website's mailing service received downtime which was encoutered on 01/10/2021 a
 
 # Timeline (01/10/2021)
 
-10:37 A.M (EAT) - Deployed flask update when one of the developers noticed /mail route wasn't returning /mail page.
-10:38 A.M (EAT) - Troubleshooting of issue, starting from the webpage where the route path was /mail which was OK.
-10:40 A.M (EAT) - Checking of the paths on the flask routes blueprint discovering /mial the mistyped route.
-10:42 A.M (EAT) - Fixing the typo to the intended /mail route.
-10:43 A.M (EAT) - Testing in development to ensure /mail is working as intended
-10:45 A.M (EAT) - Redeployed flask update ensuring service back to normal.
+* 10:37 A.M (EAT) - Deployed flask update when one of the developers noticed /mail route wasn't returning /mail page.
+* 10:38 A.M (EAT) - Troubleshooting of issue, starting from the webpage where the route path was /mail which was OK.
+* 10:40 A.M (EAT) - Checking of the paths on the flask routes blueprint discovering /mial the mistyped route.
+* 10:42 A.M (EAT) - Fixing the typo to the intended /mail route.
+* 10:43 A.M (EAT) - Testing in development to ensure /mail is working as intended
+* 10:45 A.M (EAT) - Redeployed flask update ensuring service back to normal.
 
 # Root cause and resolution
 
