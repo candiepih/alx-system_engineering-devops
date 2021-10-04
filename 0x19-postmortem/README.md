@@ -1,8 +1,8 @@
 # Issue Summary
 
-Website's mailing service received downtime which was encoutered on 04/10/2021 at 10:37 A.M EAT and recovered same day at 11:45 A.M EAT, causing 8 minutes service inaccessibility to 4% of the website clients visiting the website within the downtime range. Clients received an error 404(Not Found) when visiting website's /mail route usually used for the mailing system. Root cause of this problem was route mistype, expecting route as /mail instead of /mial.
+Website's mailing service received downtime which was encoutered on 01/10/2021 at 10:37 A.M EAT and recovered same day at 10:45 A.M EAT, causing 8 minutes service inaccessibility to 4% of the website clients visiting the website within the downtime range. Clients received an error 404(Not Found) when visiting website's /mail route usually used for the mailing system. Root cause of this problem was route mistype, expecting route as /mail instead of /mial.
 
-# Timeline (04/10/2021)
+# Timeline (01/10/2021)
 
 10:37 A.M (EAT) - Deployed flask update when one of the developers noticed /mail route wasn't returning /mail page.
 10:38 A.M (EAT) - Troubleshooting of issue, starting from the webpage where the route path was /mail which was OK.
