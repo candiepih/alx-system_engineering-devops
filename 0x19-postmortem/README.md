@@ -4,7 +4,7 @@
 
 ## Issue Summary
 
-Website's mailing service received downtime which was encoutered on 01/10/2021 at 10:37 A.M EAT and recovered same day at 10:45 A.M EAT, causing 8 minutes service inaccessibility to 4% of the website clients visiting the website within the downtime range. Clients received an error 404(Not Found) when visiting website's `/mail` route usually used for the mailing system. Root cause of this problem was route mistype, expecting route as `/mail` instead of `/mial`.
+Website's mailing service received downtime which was encoutered on 01/10/2021 at 10:37 A.M EAT and recovered same day at 10:45 A.M EAT, causing 8 minutes service inaccessibility to `4%` of the website clients visiting the website within the downtime range. Clients received an error `404(Not Found)` when visiting website's `/mail` route usually used for the mailing system. Root cause of this problem was route mistype, expecting route as `/mail` instead of `/mial`.
 
 ## Timeline (01/10/2021)
 
