@@ -34,3 +34,17 @@ Requirements:
 
 * `Nginx` must serve this page both locally and on its public IP on port `80`.
 * `Nginx` should proxy requests to the route `/airbnb-dynamic/number_odd_or_even/(any integer)` the process listening on port `5001`.
+
+[4-app_server-nginx_config](./4-app_server-nginx_config)
+
+`Nginx` configuration file that serves what was built for [AirBnB clone v3 - RESTful API](https://github.com/candiepih/AirBnB_clone_v3) on `web-01`
+
+Requirements:
+
+* Setup `Nginx` so that the route `/api/` points to a Gunicorn instance listening on port `5002`
+* `Nginx` must serve this page both locally and on its public IP on port `80`
+* To test your setup you should bind Gunicorn to `api/v1/app.py`
+
+[dump.sql](./dump.sql)
+
+SQL dump file used to populate database with data.
