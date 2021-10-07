@@ -37,7 +37,7 @@ Requirements:
 
 [4-app_server-nginx_config](./4-app_server-nginx_config)
 
-`Nginx` configuration file that serves what was built for [AirBnB clone v3 - RESTful API](https://github.com/candiepih/AirBnB_clone_v3) on `web-01`
+`Nginx` configuration file that serves what was built for [AirBnB clone v3 - RESTful API](https://github.com/candiepih/AirBnB_clone_v3/tree/main/api) on `web-01`
 
 Requirements:
 
@@ -48,3 +48,29 @@ Requirements:
 [dump.sql](./dump.sql)
 
 SQL dump file used to populate database with data.
+
+[5-app_server-nginx_config](./5-app_server-nginx_config)
+
+`Nginx` configuration file that serves what was built for [AirBnB clone - Web dynamic](https://github.com/candiepih/AirBnB_clone_v4/tree/master/web_dynamic) on `web-01`
+
+Requirements:
+
+* Your Gunicorn instance should serve content from `web_dynamic/2-hbnb.py` on port `5003`
+* Setup Nginx so that the route `/` points to your `Gunicorn` instance
+* Setup Nginx so that it properly serves the static assets found in `web_dynamic/static/` (this is essential for page to render properly)
+* For your website to be fully functional, you will need to reconfigure `web_dynamic/static/scripts/2-hbnb.js` to the correct IP
+* Nginx must serve this page both locally and on its public IP and port `5003`
+* Make sure to pull up your Developer Tools on your favorite browser to verify that you have no errors
+
+[gunicorn.service](./gunicorn.service)
+
+`systemd` script which starts a `Gunicorn` process to serve the same content as the previous task (`web_dynamic/2-hbnb.py`)
+
+Requirements:
+
+* The Gunicorn process should spawn 3 worker processes
+* The process should log errors in /tmp/airbnb-error.log
+* The process should log access in /tmp/airbnb-access.log
+* The process should be bound to port 5003
+* Your systemd script should be stored in the appropriate directory on `web-01`
+* Make sure that you start the systemd service and leave it running
