@@ -12,3 +12,25 @@ Aim of this topic was to understand the following concepts:-
 # Background Context
 
 Web infrastructure is already serving web pages via `Nginx` that was installed in the first web stack project. While a web server can also serve dynamic content, this task is usually given to an application server. In this project we will add this piece to our infrastructure, plug it to `Nginx` and make is serve Airbnb clone project.
+
+# Files
+
+The following task files were used to test understanding on the concepts
+
+[2-app_server-nginx_config](./2-app_server-nginx_config)
+
+`Nginx` onfiguration file to serve page from the route `/airbnb-onepage/`:-
+
+Requirements:
+
+* `Nginx` must serve this page both locally and on its public IP on port `80`.
+* `Nginx` should proxy requests to the process listening on port `5000`.
+
+[3-app_server-nginx_config](./3-app_server-nginx_config)
+
+`Nginx` onfiguration file to serve page from the route /airbnb-dynamic/number_odd_or_even/(any integer). `/number_odd_or_even/<int:n>` route is defined in the flask app.
+
+Requirements:
+
+* `Nginx` must serve this page both locally and on its public IP on port `80`.
+* `Nginx` should proxy requests to the route `/airbnb-dynamic/number_odd_or_even/(any integer)` the process listening on port `5001`.
